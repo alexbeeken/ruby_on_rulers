@@ -3,6 +3,7 @@ require "rulers/array"
 require "rulers/routing"
 require "rulers/util"
 require "rulers/dependencies"
+require "rulers/controller"
 
 module Rulers
   class Application
@@ -36,16 +37,6 @@ module Rulers
             ["Uh ohhhhhhhhhhhhhh!"]]
         end
       end
-    end
-  end
-
-  class Controller
-    def initialize(env)
-      @env = env
-    end
-
-    def env
-      @env
     end
   end
   class Error < StandardError; end
